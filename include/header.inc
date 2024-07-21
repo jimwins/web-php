@@ -128,6 +128,16 @@ if (!isset($config["languages"])) {
    </div>
 </div>
 
+<?php if (!empty($config['intro'])):?>
+<div id="intro" class="clearfix">
+  <div class="container">
+    <?php echo $config['intro'];?>
+  </div>
+</div>
+<?php endif;?>
+
+
+<div id="layout" class="clearfix">
 <?php if (!empty($config['breadcrumbs'])): ?>
   <div id="breadcrumbs" class="clearfix">
     <div id="breadcrumbs-inner">
@@ -161,14 +171,4 @@ if (!isset($config["languages"])) {
 <?php endif; ?>
 
 
-<?php if (!empty($config['intro'])):?>
-<div id="intro" class="clearfix">
-  <div class="container">
-    <?php echo $config['intro'];?>
-  </div>
-</div>
-<?php endif;?>
-
-
-<div id="layout" class="clearfix">
   <section id="layout-content">

@@ -586,6 +586,7 @@ pre.info {
 #layout {
     margin: 0 auto 1.5rem;
     clear:both;
+    position: relative;
 }
 
 .layout-menu {
@@ -1566,6 +1567,10 @@ div.soft-deprecation-notice blockquote.sidebar {
 
   #breadcrumbs {
     display:block;
+    position: sticky;
+    top: 3.25rem;
+    background-color: var(--background-color);
+    background-image: url('/images/bg-texture-00.svg');
   }
   .navbar-search,
   #intro .background,
